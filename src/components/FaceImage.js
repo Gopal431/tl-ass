@@ -14,7 +14,7 @@ const FaceImage = () => {
     <div>
       <img src={faceSvg} alt="Face" useMap="#face-map" />
       <map name="face-map">
-        {/* Define interactive areas on the face image with coordinates */}
+
         <area shape="poly" coords="295,496,317,437,285,462,260,529,284,513" alt="Forehead" onClick={() => handleClick('Right Chin')} />
         <area shape="poly" coords="167,386,176,358,189,353,201,358,201,378,208,386,215,410,204,414,200,407,195,414,187,421,186,420,180,414,172,411,171,414,160,418,167,386" alt="Eyes" onClick={() => handleClick('Nose')} />
         <area shape="poly" coords="136,468,142,466,156,456,158,455,174,445,179,445,188,448,192,445,197,445,203,445,217,455,220,456,235,466,240,468,240,469,242,468" alt="Nose" onClick={() => handleClick('Lips')} />
@@ -25,7 +25,7 @@ const FaceImage = () => {
         <area shape="poly" coords="296,334,309,331,320,321,324,317" alt="Right Nose" onClick={() => handleClick('Right Eyes')} />
         <area shape="poly" coords="298,334,309,333,321,327,325,325" alt="Right Mouth" onClick={() => handleClick('Right Mouth')} />
         <area shape="poly" coords="297,336,307,338,319,335,323,333" alt="Right Chin" onClick={() => handleClick('Right Chin')} />
-        {/* Add more areas as necessary */}
+  
       </map>
     </div>
   );
